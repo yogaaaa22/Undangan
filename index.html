@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan Pernikahan Diana & Haris</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <h1>Undangan Pernikahan</h1>
+      <p>Dengan penuh rasa syukur, kami mengundang Anda untuk menghadiri pernikahan kami:</p>
+      <h2>Diana & Haris</h2>
+      <p><strong>17 Desember 2025</strong> - Bandung</p>
+    </div>
+
+    <div class="section">
+      <h3>Akad Nikah</h3>
+      <p>Rabu, 17 Desember 2025<br> Pukul 09.00 WIB<br> Jl. Bunga Cinta No.17, Bandung</p>
+
+      <h3>Resepsi</h3>
+      <p>Rabu, 17 Desember 2025<br> Pukul 11.00 – 14.00 WIB<br> Grand Royal Ballroom, Bandung</p>
+    </div>
+
+    <div class="section">
+      <h3>Our Love Story</h3>
+      <p>Berawal dari pertemuan sederhana, tumbuh menjadi perjalanan penuh makna. Kami percaya, cinta tak sekadar rasa, tapi janji untuk saling menjaga selamanya.</p>
+    </div>
+
+    <div class="section">
+      <h3>Countdown Menuju Hari Bahagia</h3>
+      <p class="countdown" id="countdown"></p>
+    </div>
+
+    <div class="section">
+      <h3>Google Maps</h3>
+      <a href="https://maps.google.com?q=Grand+Royal+Ballroom+Bandung" class="btn" target="_blank">Lihat Lokasi</a>
+    </div>
+
+    <div class="section gallery">
+      <h3>Galeri Cinta</h3>
+      <img src="https://via.placeholder.com/700x400?text=Foto+1" alt="Foto Prewedding 1">
+      <img src="https://via.placeholder.com/700x400?text=Foto+2" alt="Foto Prewedding 2">
+    </div>
+
+    <div class="section">
+      <p>Kehadiran dan doa restu Anda adalah hadiah paling berharga bagi kami.<br> Dengan cinta, <strong>Diana & Haris</strong></p>
+    </div>
+  </div>
+
+  <script>
+    const targetDate = new Date("2025-12-17T09:00:00").getTime();
+    const countdownEl = document.getElementById("countdown");
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = targetDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      countdownEl.innerHTML = `${days} Hari ${hours} Jam ${minutes} Menit ${seconds} Detik`;
+    }, 1000);
+  </script>
+</body>
+</html>

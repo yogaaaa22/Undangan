@@ -1,0 +1,39 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fdfaf6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #8b5e3c;
+}
+.section {
+  margin: 30px 0;
+}
+.countdown {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #8b5e3c;
+}
+.btn {
+  background: #8b5e3c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
